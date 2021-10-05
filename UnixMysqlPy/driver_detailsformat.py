@@ -13,11 +13,11 @@ with open(datas) as f:
         interval=re.sub(pattern, r"\5",data).strip()
         print(interval) 
         if(interval=='-'):
-            insertis=r"INSERT INTO driver_details VALUES('\1','\2','\3','\4', date_sub(curdate(),interval \6 day), '\8');"
+            insertis=r"INSERT INTO driver_details VALUES(\1,'\2',\3,'\4', date_sub(curdate(),interval \6 day), '\8');"
         elif(interval=='+'):
-            insertis=r"INSERT INTO driver_details VALUES('\1','\2','\3','\4', date_sub(curdate(),interval -\6 day), '\8');"
+            insertis=r"INSERT INTO driver_details VALUES(\1,'\2',\3,'\4', date_sub(curdate(),interval -\6 day), '\8');"
         else:
-            insertis=r"INSERT INTO driver_details VALUES('\1','\2','\3','\4', date_sub(curdate()), '\8');"
+            insertis=r"INSERT INTO driver_details VALUES(\1,'\2',\3,'\4', date_sub(curdate()), '\8');"
         values.append(re.sub(pattern,insertis, data))
         print(values[0])
 print('\n'.join(values))
