@@ -4,7 +4,7 @@
 /* WORKING
 */
 let currentSlide = 0;
-const images = ['/assets/assets/home.jpg', '/assets/assets/home1.jpg', '/assets/assets/home2.jpg'];
+const images = ['assets/assets/home.jpg', 'assets/assets/home1.jpg', 'assets/assets/home2.jpg'];
 
 function showSlide(index) {
     document.body.style.backgroundImage = `url(${images[index]})`;
