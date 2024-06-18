@@ -1,0 +1,219 @@
+.NavBar {
+    background: linear-gradient(to right, rgb(30, 69, 155), rgb(7, 36, 59));
+
+    color: aliceblue;
+    /* padding: 1%; */
+    /* padding-left: 1cm; */
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 2cm;
+    width: 100%;
+    margin-bottom: auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 1rem;
+
+    z-index: 1;
+}
+
+
+.flex.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    /* margin: 0px; */
+    left: 0cm;
+    height: 2rem;
+    width: 30%;
+    justify-content: left;
+    font-size: 24px;
+    margin-left: 1cm;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.Navtab {
+    margin: auto;
+    height: 2rem;
+    width: 25%rem;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 3px;
+}
+
+.flex {
+    display: flex;
+    padding: 0%;
+    padding-left: 0%;
+    position: relative;
+    z-index: 1;
+}
+
+.flex img {
+    filter: invert(1);
+    max-width: 100%;
+    margin-right: 10px;
+    height: auto
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("C:/Users/shashank.sambarapu/Documents/Programs/UIElements/Fonts/Fonts1611740853400/Fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    /* background-image: url('/HTML_and_CSS/assets/assets/home.jpg'), url('/HTML_and_CSS/assets/assets/home1.jpg'), url('/HTML_and_CSS/assets/assets/home2.jpg'); */
+    background-position: 0 20%;
+
+    background-size: 100%;
+    /* background-color: rgba(0, 0, 0, 0.863); */
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    /* display: flex; */
+    z-index: 1;
+    position: relative;
+
+}
+
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+
+
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.slide img {
+    display: none;
+    /* hide the img element, we'll use the background image instead */
+}
+
+.slide:nth-child(1) {
+    background-image: url('/assets/assets/home.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('/assets/assets/home1.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('/assets/assets/home2.jpg');
+}
+
+
+
+
+
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    z-index: 1;
+}
+
+
+.NavBarBottom {
+    background: linear-gradient(to right, rgb(37, 84, 194), rgb(7, 32, 59));
+    z-index: 1;
+
+    color: aliceblue;
+    /* padding: 1%; */
+    /* padding-left: 1cm; */
+    /* position: fixed; */
+    bottom: 0;
+    height: auto;
+    width: 100%;
+
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+
+    padding: 0rem;
+    margin-top: auto;
+    position: fixed;
+    justify-content: center;
+}
+
+.centerpart {
+    border-bottom: 100px;
+    margin: 15px;
+    border: 10px;
+    align-self: center;
+    z-index: 1;
+}
+
+.centerpart h1 {
+    font-size: 220%;
+    text-align: center;
+    margin-top: 40%;
+
+}
+
+.centerpart h2 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.exploreBtn {
+    background-color: rgb(240, 58, 113);
+    margin: 20px;
+    padding: 1px 20px;
+    z-index: 1;
+}
